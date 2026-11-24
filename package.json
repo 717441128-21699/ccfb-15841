@@ -1,0 +1,19 @@
+{
+  "name": "leak-correlator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "供水管道检漏相关仪 - 双传感器互相关漏点定位系统",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "validate": "node --experimental-strip-types --loader ./scripts/ts-loader.mjs scripts/validate.ts",
+    "test:worker": "node --experimental-strip-types --loader ./scripts/ts-loader.mjs scripts/test-worker.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
